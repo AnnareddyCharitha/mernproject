@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>A Charitha Portfolio</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+scroll-behavior:smooth;
+}
+
+nav{
+background:#2563eb;
+color:white;
+padding:15px;
+position:sticky;
+top:0;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:20px;
+justify-content:center;
+margin:0;
+padding:0;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+section{
+padding:60px;
+text-align:center;
+}
+
+.hero{
+background:#eff6ff;
+}
+
+.skills{
+background:#f3f4f6;
+}
+
+.projects{
+background:white;
+}
+
+.education{
+background:#f3f4f6;
+}
+
+.achievements{
+background:#f9fafb;
+}
+
+.contact{
+background:white;
+}
+
+.skill-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:20px;
+max-width:700px;
+margin:auto;
+}
+
+.skill{
+background:white;
+padding:15px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:900px;
+margin:auto;
+}
+
+.project{
+background:#f9fafb;
+padding:20px;
+border-radius:8px;
+box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+
+button{
+background:#2563eb;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+footer{
+background:#2563eb;
+color:white;
+text-align:center;
+padding:10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<!-- Navbar -->
+
+<nav>
+
+<ul>
+
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#projects">Projects</a></li>
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h1>Hi, I'm A Charitha</h1>
+
+<h3>Computer Science Engineering Student</h3>
+
+<p>
+Motivated, creative, and detail-oriented undergraduate with strong
+foundation in Computer Science fundamentals.
+</p>
+
+<button onclick="downloadResume()">Download Resume</button>
+
+</section>
+
+
+<!-- About -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+I am currently pursuing B.Tech in Computer Science Engineering
+at Madanapalle Institute of Technology & Science with a CGPA of 9.51.
+I enjoy learning programming and building web applications.
+</p>
+
+</section>
+
+
+<!-- Skills -->
+
+<section id="skills" class="skills">
+
+<h2>Skills</h2>
+
+<div class="skill-grid">
+
+<div class="skill">Python</div>
+<div class="skill">C</div>
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">MySQL</div>
+<div class="skill">Git</div>
+<div class="skill">GitHub</div>
+
+</div>
+
+</section>
+
+
+<!-- Projects -->
+
+<section id="projects" class="projects">
+
+<h2>Projects</h2>
+
+<div class="project-grid">
+
+<div class="project">
+
+<h3>Mind Reader</h3>
+
+<p>
+Web application that helps users create professional resumes.
+</p>
+
+<p><b>Tech:</b> HTML CSS JavaScript</p>
+
+</div>
+
+<div class="project">
+
+<h3>Health Check</h3>
+
+<p>
+Chatbot that provides health information based on symptoms.
+</p>
+
+<p><b>Tech:</b> Python</p>
+
+</div>
+
+<div class="project">
+
+<h3>Secure DevOps</h3>
+
+<p>
+Implemented DevOps practices focusing on secure CI/CD pipelines.
+</p>
+
+<p><b>Tech:</b> DevOps</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- Education -->
+
+<section class="education">
+
+<h2>Education</h2>
+
+<p><b>B.Tech Computer Science Engineering</b></p>
+
+<p>Madanapalle Institute of Technology & Science</p>
+
+<p>Expected Graduation: 2027</p>
+
+<p>CGPA: 9.51</p>
+
+</section>
+
+
+<!-- Certifications -->
+
+<section>
+
+<h2>Certifications</h2>
+
+<p>HackerRank Certification in Python</p>
+
+</section>
+
+
+<!-- Achievements -->
+
+<section class="achievements">
+
+<h2>Achievements</h2>
+
+<ul style="list-style:none">
+
+<li>Participated in Arduino Workshop</li>
+<li>Active IEEE Student Chapter Member</li>
+<li>Presented Paper in Conference</li>
+
+</ul>
+
+</section>
+
+
+<!-- Contact -->
+
+<section id="contact" class="contact">
+
+<h2>Contact</h2>
+
+<p>Email: charithareddyannareddy@gmail.com</p>
+
+<p>
+
+<a href="https://github.com">GitHub</a> |
+<a href="https://linkedin.com">LinkedIn</a>
+
+</p>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 A Charitha Portfolio</p>
+
+</footer>
+
+
+<script>
+
+function downloadResume(){
+alert("Add your resume file in same folder named resume.pdf");
+window.open("resume.pdf");
+}
+
+</script>
+
+
+</body>
+</html>
